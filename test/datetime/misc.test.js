@@ -134,6 +134,7 @@ test("DateTime#weeksInWeekYear returns NaN for invalid DateTimes", () => {
 // #nextWeekday
 //------
 test("DateTime#nextWeekday returns next weekday for current date", () => {
+  console.log("HELLO");
   expect(DateTime.fromISO("2023-10-06T09:08:34.123").nextWeekday(1)).toStrictEqual(
     DateTime.fromISO("2023-10-09T09:08:34.123")
   );
